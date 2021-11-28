@@ -1,43 +1,16 @@
 function randomNumber(){
     return Math.floor(Math.random()*10)
 }
-const message =(number) =>{
-    switch(number){
-        case 0:
-            return "Reliance Industeries"
-            break
-        case 1: 
-            return "NMDC"
-            break
-        case 2:
-            return "HDFC"
-            break
-        case 3:
-            return "BTC"
-            break
-        case 4:
-            return "ETH"
-            break
-        case 5:
-            return "SOL"
-            break
-        case 6:
-            return "DOGE"
-            break
-        case 7:
-            return "AAPL"
-            break
-        case 8:
-            return "GOOGL"
-            break
-        case 9:
-            return "KNR"
-            break
-        default:
-            return "Other"
-            break
-    }
+let pronoun = ["He", "She", "They", "It", "I", "Them","Only", "My friends", "I thought I", "There is no way I"]
+let verb = ["jumped", "landed", "cut", "sold", "bought", "thought", "typed", "slept", "woke up", "watched the whole series of only murders in the building"]
+let location = ["on the bed", "on the platform", "in the shower", "in the living room", "on the couch", "at my desk", "at the dining table", "on the road", "the morning show", "while coding"]
+
+
+function speak (){
+    console.log(pronoun[randomNumber()] + " " +verb[randomNumber()] + " " +location[randomNumber()] + ".")
 }
-const num = randomNumber()
-console.log(num + message(num))
+speak();
+
+
+
 
