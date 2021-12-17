@@ -1,5 +1,6 @@
-function randomNumber(){
-    return Math.floor(Math.random()*10)
+function randomElement(list){
+    let num = list.length;
+    return Math.floor(Math.random()*num)
 }
 let pronoun = ["He", "She", "They", "It", "I", "Them","Only", "My friends", "I thought I", "There is no way I"]
 let verb = ["jumped", "landed", "cut", "sold", "bought", "thought", "typed", "slept", "woke up", "watched the whole series of only murders in the building"]
@@ -7,7 +8,7 @@ let location = ["on the bed", "on the platform", "in the shower", "in the living
 
 
 function speak (){
-    console.log(pronoun[randomNumber()] + " " +verb[randomNumber()] + " " +location[randomNumber()] + ".")
+    console.log(pronoun[randomElement(pronoun)] + " " +verb[randomElement(verb)] + " " +location[randomElement(location)] + ".")
 }
 speak();
 
